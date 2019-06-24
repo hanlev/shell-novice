@@ -44,8 +44,14 @@ done
 ```
 {: .language-bash}
 
-and we can apply this to our example like this:
+A `for` loop executes the set of commands found between the "do" and "done" statements on each item in a given list, one at a time. A `for` loop requires the following:
 
+- a `for` statement: "for _b_ in _a_". The `for` statement contains these key features:
+  * _a_: a list of items separated by spaces. For example, our list of items could be "basilisk.dat unicorn.dat".
+  * _b_: a variable name. You, the programmer, choose what you want to use as the variable name. This variable will be used as a generic term that represents a list item. 
+- a set of Unix commands enclosed between the words "do" and "done". These are the Unix commands that you want to execute on each list item. 
+
+We can apply this to our example like this:
 ```
 $ for filename in basilisk.dat unicorn.dat
 > do
